@@ -23,4 +23,15 @@ public class userRepository {
 		}
 	}
 	
+	// 계정명을 통해 해당 계정명의 정보를 가지고 있는 User객체를 리턴하는 메서드
+	public static User getUser(String inputId) {
+		for(User user : userList) {
+			if(user.getAccout().equals(inputId)) {
+				return user;
+			}
+		}
+		return null;
+	}
+	
+	
 }
