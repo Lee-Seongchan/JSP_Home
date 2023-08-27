@@ -28,7 +28,8 @@
 	request.setAttribute("gender", gender);
 	request.setAttribute("address", address);
 	
-	//response.sendRedirect("EJTJ/el_obj3.jsp");
+	//response.sendRedirect("/ELTJ/el_obj3.jsp");
 
 %>
+
 <jsp:forward page="/el_obj3.jsp"/>
